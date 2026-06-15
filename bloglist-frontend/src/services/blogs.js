@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = '/api/blogs'
+const baseUrl = 'https://fso-part4-7dym.onrender.com/api/blogs'
 
 let token = null
 
