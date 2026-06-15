@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Routes, Route, Link, useMatch} from 'react-router-dom'
 import Users from './components/Users'
 import User from './components/User'
+import Footer from './components/Footer'
 
 import Blog from './components/Blog'
 import LoginForm from './components/loginForm'
@@ -237,6 +238,9 @@ const App = () => {
 
       </nav>
 
+
+      
+
       <Notification
         message={notification.message}
         type={notification.type}
@@ -250,7 +254,7 @@ const App = () => {
           element={
             <div className='max-w-5xl mx-auto mt-8 px-4'>
 
-              <h2 className='bg-gray-200 w-full p-5 font-bold mt-8'>Blogs</h2>
+              <h2 className='bg-slate-900 w-full p-5 font-bold mt-8 text-slate-300'>Blogs</h2>
 
               <ul className='border border-gray-200 p-5'>
                 {blogs.map(blog => (
@@ -334,8 +338,12 @@ const App = () => {
 
       </Routes>
 
+
+<Footer />
     </div>
+    
   )
+  
 }
 
 export default App
