@@ -1,8 +1,6 @@
 
 import axios from 'axios'
-
-
-const baseUrl = 'https://fso-part4-7dym.onrender.com/api/users'
+const baseUrl = '/api/users'
 
 
 const getAll = async () => {
